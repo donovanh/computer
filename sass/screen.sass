@@ -39,72 +39,68 @@ body
   left: 50%
   margin-left: -4.5em
   +transform-style(preserve-3d)
+  +transform(rotateY(-20deg))
 
   &.animated
     +animation(back-and-forth 14s ease-in-out infinite)
 
-  &.two
-    +transform(translateX(14em) translateZ(-10em) rotateY(30deg))
-
-  &.three
-    +transform(translateX(-14em) translateZ(-10em) rotateY(10deg))
-
-/* 13.6 x 9.6 x 10.9
-
-.mac
+.monitor
   width: 12em
   height: 10em
   margin: 0 auto
   +transform-style(preserve-3d)
-  +transform(rotateY(-20deg))
 
   figure, span
     display: block
     position: absolute
-    +backface-visibility(hidden)
+    /* +backface-visibility(hidden)
     opacity: 1
 
+  .head
+    +transform-style(preserve-3d)
+    +transform(rotateX(5deg))
+
   .front
-    height: 11.5em
-    width: 9.6em
+    height: 8em
+    width: 10em
     background: darken($colour, 12%)
-    +transform(rotateX(5deg) translateZ(5.43em))
+    +transform(translateZ(4em))
 
     .bezel-top
       border-top: 0.75em solid darken($colour, 5%)
       border-right: 0.5em solid transparent
       border-left: 0.5em solid transparent
-      width: 8.6em
+      width: 9em
 
     .bezel-left
       border-top: 0.5em solid darken($colour, 15%)
       border-right: 0.75em solid transparent
       border-left: 0.75em solid transparent
-      width: 10em
-      +transform(rotateZ(-90deg) translateX(-5.5em) translateY(-5.5em))
+      width: 6.5em
+      +transform(rotateZ(-90deg) translateX(-3.8em) translateY(-3.7em))
 
     .bezel-right
       border-top: 0.5em solid darken($colour, 17%)
       border-right: 0.75em solid transparent
       border-left: 0.75em solid transparent
-      width: 10em
-      +transform(rotateZ(90deg) translateX(5.5em) translateY(-3.62em))
+      width: 6.5em
+      +transform(rotateZ(90deg) translateX(3.7em) translateY(-5.8em))
 
     .bezel-bottom
       border-top: 0.75em solid darken($colour, 20%)
       border-right: 0.5em solid transparent
       border-left: 0.5em solid transparent
-      width: 8.65em
-      +transform(rotateZ(180deg) translateY(-10.76em))
+      width: 9em
+      +transform(rotateZ(180deg) translateY(-7.28em) translateX(-0.08em))
 
     .screen-container
-      width: 6.25em
-      height: 4.8em
+      width: 7em
+      height: 4.6em
       background: darken($colour, 24%)
       +background(linear-gradient(top, darken($colour, 30%), darken($colour, 20%) 4%, darken($colour, 20%) 96%, darken($colour, 35%)))
       border-radius: 0.1em
       padding: 0.5em
-      +transform(translate3d(1.15em, 1.5em, 0))
+      +transform(translate3d(1em, 1.25em, 0))
 
       .screen
         display: block
@@ -113,8 +109,8 @@ body
         top: 0.25em
         background: #657374
         border: 0.25em solid #657374
-        width: 6.25em
-        height: 4.75em
+        width: 7em
+        height: 4.6em
         border-radius: 0.25em
         overflow: hidden
 
@@ -144,68 +140,66 @@ body
         height: 100%
 
   .back
-    height: 11.5em
-    width: 9.6em
+    height: 8em
+    width: 10em
     +background(linear-gradient(top, darken($colour, 5%), darken($colour, 10%) 0.25em, darken($colour, 24%)))
-    +transform(rotateX(5deg) translateZ(-5.45em) rotateY(180deg))
+    +transform(translateZ(-4em) rotateY(180deg))
 
   .top
-    height: 10.95em
-    width: 9.6em
+    height: 8em
+    width: 10em
     background-color: #ebf0dc
     +background(linear-gradient(left, darken($colour, 2%), darken($colour, 15%) 0.25em, darken($colour, 15%) 9.35em, darken($colour, 2%)))
     +background(linear-gradient(top, darken($colour, 5%), darken($colour, 15%) 0.25em, darken($colour, 30%)))
-    +transform(rotateX(5deg) rotateX(90deg) translateZ(5.45em))
+    +transform(rotateX(90deg) translateZ(4em))
 
   .left
-    height: 11.5em
-    width: 10.9em
+    height: 8em
+    width: 8em
     +background(linear-gradient(top, darken($colour, 0%), darken($colour, 12%) 0.25em, darken($colour, 30%)))
-    +transform(rotateX(5deg) rotateY(-90deg) translateZ(5.45em))
+    +transform(rotateY(-90deg) translateZ(4em))
 
     &:after
       content: ""
       position: absolute
-      width: 8.9em
+      width: 7em
       height: 1em
-      top: 11.4em
+      top: 0.5em
       left: 0.5em
-      +transform(rotateZ(5deg))
       +background(linear-gradient(top, rgba(100,100,100,0.8), rgba(100,100,100,0.8) 30%, transparent 30%, transparent))
       background-size: 2em
 
   .right
-    height: 11.5em
-    width: 10.9em
+    height: 8em
+    width: 8em
     +background(linear-gradient(top, darken($colour, 0%), darken($colour, 12%) 0.25em, darken($colour, 30%)))
-    +transform(rotateX(5deg) rotateY(90deg) translateZ(4.14em))
+    +transform(rotateY(90deg) translateZ(6em))
 
     &:after
       content: ""
       position: absolute
-      width: 8.9em
+      width: 7em
       height: 1em
-      top: 11.4em
+      top: 0.5em
       right: 0.5em
-      +transform(rotateZ(-5deg))
       +background(linear-gradient(top, rgba(100,100,100,0.8), rgba(100,100,100,0.8) 30%, transparent 30%, transparent))
       background-size: 2em
 
   .base-front
-    height: 2.1em
-    width: 9.6em
+    height: 1.8em
+    width: 10em
     background: darken($colour, 24%)
-    +transform(translateY(10.7em) translateZ(5em))
+    +transform(translateY(8em) translateZ(3em))
 
     &:after
       content: ""
       display: block
-      width: 0.4em
-      height: 0.5em
+      width: 0.5em
+      height: 0.4em
       position: absolute
-      top: 0.9em
+      top: 0.5em
       right: 1em
-      background: #555
+      background: red
       border-top: 0.1em solid darken($colour, 30%)
       border-right: 0.2em solid darken($colour, 20%)
       border-bottom: 0.1em solid darken($colour, 10%)
@@ -213,22 +207,22 @@ body
       border-radius: 0.12em
 
   .base-back
-    height: 2.1em
-    width: 9.6em
+    height: 1.8em
+    width: 10em
     background: darken($colour, 30%)
-    +transform(translateY(10.7em) translateZ(-5em) rotateY(180deg))
+    +transform(translateY(8em) translateZ(-3.38em) rotateY(180deg))
 
   .base-left
-    height: 2.1em
-    width: 10em
+    height: 1.8em
+    width: 6em
     background: darken($colour, 30%)
-    +transform(translateY(10.7em) rotateY(-90deg) translateZ(4.99em))
+    +transform(translateY(8em) rotateY(-90deg) translateZ(3em))
 
   .base-right
-    height: 2.1em
-    width: 10em
+    height: 1.8em
+    width: 6em
     background: darken($colour, 30%)
-    +transform(translateY(10.7em) rotateY(90deg) translateZ(4.58em))
+    +transform(translateY(8em) rotateY(90deg) translateZ(7em))
 
   .logo
     +transform(translateY(8.75em) translateX(1.25em))
@@ -265,12 +259,31 @@ body
     border-radius: 0.25em
 
   .shadow
-    width: 10em
-    height: 11em
+    width: 12em
+    height: 8em
     background: transparent
-    +transform(rotateX(90deg) translateZ(-7.4em) translateX(20em))
-    +box-shadow(-20.2em 0 1.8em rgba(100,90,100,0.4))
+    +transform(rotateX(90deg) translateZ(-6em) translateX(21em))
+    +box-shadow(-22em 0 1.8em rgba(100,90,100,0.2))
 
+
+.tower
+  +transform(translateX(15em))
+
+  figure
+    position: absolute
+    display: block
+    background: red
+
+  .front
+
+
+  .left
+
+  .right
+
+  .back
+
+  .top
 
 +keyframes(back-and-forth)
   0%
@@ -287,11 +300,4 @@ body
     opacity: 0
   50%, 100%
     opacity: 1
-
-@font-face
-  font-family: 'apple_garamondregular'
-  src: url('../fonts/apple_garamond-webfont.eot')
-  src: url('../fonts/apple_garamond-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/apple_garamond-webfont.woff') format('woff'), url('../fonts/apple_garamond-webfont.ttf') format('truetype'), url('../fonts/apple_garamond-webfont.svg#apple_garamondregular') format('svg')
-  font-weight: normal
-  font-style: normal
  
