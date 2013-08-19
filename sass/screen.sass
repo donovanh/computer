@@ -29,7 +29,7 @@ body
   
   position: relative
   +perspective(1600px)
-  +perspective-origin(50% 100px)
+  +perspective-origin(50% -100px)
   +background(linear-gradient(top, #131c2d, #131c2d 40%, #b1b5b8 40%, #eee9e6))
 
 .positioning
@@ -39,7 +39,7 @@ body
   left: 50%
   margin-left: -4.5em
   +transform-style(preserve-3d)
-  +transform(rotateY(-20deg))
+  +transform(rotateY(-40deg))
 
   &.animated
     +animation(back-and-forth 14s ease-in-out infinite)
@@ -77,21 +77,21 @@ body
       border-right: 0.75em solid transparent
       border-left: 0.75em solid transparent
       width: 6.5em
-      +transform(rotateZ(-90deg) translateX(-3.8em) translateY(-3.7em))
+      +transform(rotateZ(-90deg) translateX(-3.75em) translateY(-3.75em))
 
     .bezel-right
       border-top: 0.5em solid darken($colour, 17%)
       border-right: 0.75em solid transparent
       border-left: 0.75em solid transparent
       width: 6.5em
-      +transform(rotateZ(90deg) translateX(3.7em) translateY(-5.8em))
+      +transform(rotateZ(90deg) translateX(3.75em) translateY(-5.75em))
 
     .bezel-bottom
       border-top: 0.75em solid darken($colour, 20%)
       border-right: 0.5em solid transparent
       border-left: 0.5em solid transparent
       width: 9em
-      +transform(rotateZ(180deg) translateY(-7.28em) translateX(-0.08em))
+      +transform(rotateZ(180deg) translateY(-7.25em))
 
     .screen-container
       width: 7em
@@ -264,26 +264,6 @@ body
     background: transparent
     +transform(rotateX(90deg) translateZ(-6em) translateX(21em))
     +box-shadow(-22em 0 1.8em rgba(100,90,100,0.2))
-
-
-.tower
-  +transform(translateX(15em))
-
-  figure
-    position: absolute
-    display: block
-    background: red
-
-  .front
-
-
-  .left
-
-  .right
-
-  .back
-
-  .top
 
 +keyframes(back-and-forth)
   0%

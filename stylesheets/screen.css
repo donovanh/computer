@@ -89,11 +89,11 @@ body {
   -ms-perspective: 1600px;
   -o-perspective: 1600px;
   perspective: 1600px;
-  -webkit-perspective-origin: 50% 100px;
-  -moz-perspective-origin: 50% 100px;
-  -ms-perspective-origin: 50% 100px;
-  -o-perspective-origin: 50% 100px;
-  perspective-origin: 50% 100px;
+  -webkit-perspective-origin: 50% -100px;
+  -moz-perspective-origin: 50% -100px;
+  -ms-perspective-origin: 50% -100px;
+  -o-perspective-origin: 50% -100px;
+  perspective-origin: 50% -100px;
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #131c2d), color-stop(40%, #131c2d), color-stop(40%, #b1b5b8), color-stop(100%, #eee9e6));
   background: -webkit-linear-gradient(top, #131c2d, #131c2d 40%, #b1b5b8 40%, #eee9e6);
   background: -moz-linear-gradient(top, #131c2d, #131c2d 40%, #b1b5b8 40%, #eee9e6);
@@ -112,11 +112,11 @@ body {
   -ms-transform-style: preserve-3d;
   -o-transform-style: preserve-3d;
   transform-style: preserve-3d;
-  -webkit-transform: rotateY(-20deg);
-  -moz-transform: rotateY(-20deg);
-  -ms-transform: rotateY(-20deg);
-  -o-transform: rotateY(-20deg);
-  transform: rotateY(-20deg);
+  -webkit-transform: rotateY(-40deg);
+  -moz-transform: rotateY(-40deg);
+  -ms-transform: rotateY(-40deg);
+  -o-transform: rotateY(-40deg);
+  transform: rotateY(-40deg);
 }
 .positioning.animated {
   -webkit-animation: back-and-forth 14s ease-in-out infinite;
@@ -175,33 +175,33 @@ body {
   border-right: 0.75em solid transparent;
   border-left: 0.75em solid transparent;
   width: 6.5em;
-  -webkit-transform: rotateZ(-90deg) translateX(-3.8em) translateY(-3.7em);
-  -moz-transform: rotateZ(-90deg) translateX(-3.8em) translateY(-3.7em);
-  -ms-transform: rotateZ(-90deg) translateX(-3.8em) translateY(-3.7em);
-  -o-transform: rotateZ(-90deg) translateX(-3.8em) translateY(-3.7em);
-  transform: rotateZ(-90deg) translateX(-3.8em) translateY(-3.7em);
+  -webkit-transform: rotateZ(-90deg) translateX(-3.75em) translateY(-3.75em);
+  -moz-transform: rotateZ(-90deg) translateX(-3.75em) translateY(-3.75em);
+  -ms-transform: rotateZ(-90deg) translateX(-3.75em) translateY(-3.75em);
+  -o-transform: rotateZ(-90deg) translateX(-3.75em) translateY(-3.75em);
+  transform: rotateZ(-90deg) translateX(-3.75em) translateY(-3.75em);
 }
 .monitor .front .bezel-right {
   border-top: 0.5em solid #d4d4d4;
   border-right: 0.75em solid transparent;
   border-left: 0.75em solid transparent;
   width: 6.5em;
-  -webkit-transform: rotateZ(90deg) translateX(3.7em) translateY(-5.8em);
-  -moz-transform: rotateZ(90deg) translateX(3.7em) translateY(-5.8em);
-  -ms-transform: rotateZ(90deg) translateX(3.7em) translateY(-5.8em);
-  -o-transform: rotateZ(90deg) translateX(3.7em) translateY(-5.8em);
-  transform: rotateZ(90deg) translateX(3.7em) translateY(-5.8em);
+  -webkit-transform: rotateZ(90deg) translateX(3.75em) translateY(-5.75em);
+  -moz-transform: rotateZ(90deg) translateX(3.75em) translateY(-5.75em);
+  -ms-transform: rotateZ(90deg) translateX(3.75em) translateY(-5.75em);
+  -o-transform: rotateZ(90deg) translateX(3.75em) translateY(-5.75em);
+  transform: rotateZ(90deg) translateX(3.75em) translateY(-5.75em);
 }
 .monitor .front .bezel-bottom {
   border-top: 0.75em solid #cccccc;
   border-right: 0.5em solid transparent;
   border-left: 0.5em solid transparent;
   width: 9em;
-  -webkit-transform: rotateZ(180deg) translateY(-7.28em) translateX(-0.08em);
-  -moz-transform: rotateZ(180deg) translateY(-7.28em) translateX(-0.08em);
-  -ms-transform: rotateZ(180deg) translateY(-7.28em) translateX(-0.08em);
-  -o-transform: rotateZ(180deg) translateY(-7.28em) translateX(-0.08em);
-  transform: rotateZ(180deg) translateY(-7.28em) translateX(-0.08em);
+  -webkit-transform: rotateZ(180deg) translateY(-7.25em);
+  -moz-transform: rotateZ(180deg) translateY(-7.25em);
+  -ms-transform: rotateZ(180deg) translateY(-7.25em);
+  -o-transform: rotateZ(180deg) translateY(-7.25em);
+  transform: rotateZ(180deg) translateY(-7.25em);
 }
 .monitor .front .screen-container {
   width: 7em;
@@ -464,19 +464,6 @@ body {
   -webkit-box-shadow: -22em 0 1.8em rgba(100, 90, 100, 0.2);
   -moz-box-shadow: -22em 0 1.8em rgba(100, 90, 100, 0.2);
   box-shadow: -22em 0 1.8em rgba(100, 90, 100, 0.2);
-}
-
-.tower {
-  -webkit-transform: translateX(15em);
-  -moz-transform: translateX(15em);
-  -ms-transform: translateX(15em);
-  -o-transform: translateX(15em);
-  transform: translateX(15em);
-}
-.tower figure {
-  position: absolute;
-  display: block;
-  background: red;
 }
 
 @-moz-keyframes back-and-forth {
