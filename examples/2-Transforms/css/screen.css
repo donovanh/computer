@@ -2,31 +2,32 @@
 
 /* Transforms example */
 
-.front {
-  height: 11.5em;
-  width: 9.6em;
+.monitor .front {
+  height: 8em;
+  width: 10em;
   background: #e0e0e0;
-  -webkit-transform: translateZ(5.43em);
-  -moz-transform: translateZ(5.43em);
-  -ms-transform: translateZ(5.43em);
-  -o-transform: translateZ(5.43em);
-  transform: translateZ(5.43em);
+  -webkit-transform: translateZ(4em);
+  -moz-transform: translateZ(4em);
+  -ms-transform: translateZ(4em);
+  -o-transform: translateZ(4em);
+  transform: translateZ(4em);
 }
 
-.back {
-  height: 11.5em;
-  width: 9.6em;
-  background: #aaa;
-  -webkit-transform: translateZ(-5.45em) rotateY(180deg);
-  -moz-transform: translateZ(-5.45em) rotateY(180deg);
-  -ms-transform: translateZ(-5.45em) rotateY(180deg);
-  -o-transform: translateZ(-5.45em) rotateY(180deg);
-  transform: translateZ(-5.45em) rotateY(180deg);
+.monitor .back {
+  height: 8em;
+  width: 10em;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f2f2f2), color-stop(0.25em, #e6e6e6), color-stop(100%, #c2c2c2));
+  background: -webkit-linear-gradient(top, #f2f2f2, #e6e6e6 0.25em, #c2c2c2);
+  background: -moz-linear-gradient(top, #f2f2f2, #e6e6e6 0.25em, #c2c2c2);
+  background: -o-linear-gradient(top, #f2f2f2, #e6e6e6 0.25em, #c2c2c2);
+  background: linear-gradient(top, #f2f2f2, #e6e6e6 0.25em, #c2c2c2);
+  -webkit-transform: translateZ(-4em) rotateY(180deg);
+  -moz-transform: translateZ(-4em) rotateY(180deg);
+  -ms-transform: translateZ(-4em) rotateY(180deg);
+  -o-transform: translateZ(-4em) rotateY(180deg);
+  transform: translateZ(-4em) rotateY(180deg);
 }
 
-
-
-/* Other style stuff - not relevant to this example */
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -89,14 +90,6 @@ body {
   font-size: 34px;
 }
 
-figure {
-  text-align: center;
-  font-size: 30px;
-  font-family: Helvetica, Arial, Sans-serif;
-  color: #777;
-  line-height: 10em;
-}
-
 .stage {
   width: 100%;
   height: 700px;
@@ -106,11 +99,11 @@ figure {
   -ms-perspective: 1600px;
   -o-perspective: 1600px;
   perspective: 1600px;
-  -webkit-perspective-origin: 50% -100px;
-  -moz-perspective-origin: 50% -100px;
-  -ms-perspective-origin: 50% -100px;
-  -o-perspective-origin: 50% -100px;
-  perspective-origin: 50% -100px;
+  -webkit-perspective-origin: 50% 100px;
+  -moz-perspective-origin: 50% 100px;
+  -ms-perspective-origin: 50% 100px;
+  -o-perspective-origin: 50% 100px;
+  perspective-origin: 50% 100px;
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #131c2d), color-stop(40%, #131c2d), color-stop(40%, #b1b5b8), color-stop(100%, #eee9e6));
   background: -webkit-linear-gradient(top, #131c2d, #131c2d 40%, #b1b5b8 40%, #eee9e6);
   background: -moz-linear-gradient(top, #131c2d, #131c2d 40%, #b1b5b8 40%, #eee9e6);
@@ -129,6 +122,11 @@ figure {
   -ms-transform-style: preserve-3d;
   -o-transform-style: preserve-3d;
   transform-style: preserve-3d;
+  -webkit-transform: rotateY(-40deg);
+  -moz-transform: rotateY(-40deg);
+  -ms-transform: rotateY(-40deg);
+  -o-transform: rotateY(-40deg);
+  transform: rotateY(-40deg);
 }
 .positioning.animated {
   -webkit-animation: back-and-forth 14s ease-in-out infinite;
@@ -138,8 +136,7 @@ figure {
   animation: back-and-forth 14s ease-in-out infinite;
 }
 
-/* 13.6 x 9.6 x 10.9 */
-.mac {
+.monitor {
   width: 12em;
   height: 10em;
   margin: 0 auto;
@@ -148,17 +145,21 @@ figure {
   -ms-transform-style: preserve-3d;
   -o-transform-style: preserve-3d;
   transform-style: preserve-3d;
-  -webkit-transform: rotateY(-20deg);
-  -moz-transform: rotateY(-20deg);
-  -ms-transform: rotateY(-20deg);
-  -o-transform: rotateY(-20deg);
-  transform: rotateY(-20deg);
 }
-.mac figure, .mac span {
+.monitor figure, .monitor span {
   display: block;
   position: absolute;
   opacity: 1;
 }
+
+figure {
+  text-align: center;
+  font-size: 30px;
+  font-family: Helvetica, Arial, Sans-serif;
+  color: #777;
+  line-height: 8em;
+}
+
 
 
 @-moz-keyframes back-and-forth {
@@ -325,10 +326,4 @@ figure {
   }
 }
 
-@font-face {
-  font-family: "apple_garamondregular";
-  src: url("../fonts/apple_garamond-webfont.eot");
-  src: url("../fonts/apple_garamond-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/apple_garamond-webfont.woff") format("woff"), url("../fonts/apple_garamond-webfont.ttf") format("truetype"), url("../fonts/apple_garamond-webfont.svg#apple_garamondregular") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
+
