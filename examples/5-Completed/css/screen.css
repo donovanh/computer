@@ -1,84 +1,17 @@
 
 
-/* Perspective example */
-/* Change the perspectivr value here to see it change on the page */
-/* Lower values (such as 500px) product a more extreme effect */
-.stage {
-  -webkit-perspective: 1600px;
-  -moz-perspective: 1600px;
-  -ms-perspective: 1600px;
-  -o-perspective: 1600px;
-  perspective: 1600px;
-}
+/* Completed example */
 
-
-
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font: inherit;
-  font-size: 100%;
-  vertical-align: baseline;
-}
-
-html {
-  line-height: 1;
-}
-
-ol, ul {
-  list-style: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-caption, th, td {
-  text-align: left;
-  font-weight: normal;
-  vertical-align: middle;
-}
-
-q, blockquote {
-  quotes: none;
-}
-q:before, q:after, blockquote:before, blockquote:after {
-  content: "";
-  content: none;
-}
-
-a img {
-  border: none;
-}
-
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
-  display: block;
-}
-
-body {
-  background-color: #eee9e6;
-  font-size: 34px;
-}
 
 .stage {
   width: 100%;
   height: 700px;
   position: relative;
+  -webkit-perspective: 1600px;
+  -moz-perspective: 1600px;
+  -ms-perspective: 1600px;
+  -o-perspective: 1600px;
+  perspective: 1600px;
   -webkit-perspective-origin: 50% 100px;
   -moz-perspective-origin: 50% 100px;
   -ms-perspective-origin: 50% 100px;
@@ -400,48 +333,6 @@ body {
   -o-transform: translateY(8em) rotateY(90deg) translateZ(7em);
   transform: translateY(8em) rotateY(90deg) translateZ(7em);
 }
-.monitor .logo {
-  -webkit-transform: translateY(8.75em) translateX(1.25em);
-  -moz-transform: translateY(8.75em) translateX(1.25em);
-  -ms-transform: translateY(8.75em) translateX(1.25em);
-  -o-transform: translateY(8.75em) translateX(1.25em);
-  transform: translateY(8.75em) translateX(1.25em);
-}
-.monitor .logo span.image {
-  display: block;
-  position: absolute;
-  width: 15px;
-  height: 18px;
-  left: 0;
-  background: url(../images/bg/apple.png) no-repeat bottom;
-  background-size: 100%;
-}
-.monitor .logo span.text {
-  display: block;
-  position: absolute;
-  left: 2.5em;
-  top: 0.6em;
-  width: 10em;
-  font-family: apple_garamondregular, "Garamond", "Times New Roman", Times, serif;
-  font-size: 0.333em;
-  color: #555555;
-  line-height: 0.8em;
-}
-.monitor .floppy {
-  height: 0.2em;
-  width: 2.8em;
-  -webkit-transform: translate3d(4.8em, 8.9em, 0);
-  -moz-transform: translate3d(4.8em, 8.9em, 0);
-  -ms-transform: translate3d(4.8em, 8.9em, 0);
-  -o-transform: translate3d(4.8em, 8.9em, 0);
-  transform: translate3d(4.8em, 8.9em, 0);
-  background: #555555;
-  border-top: 0.1em solid #cccccc;
-  border-right: 0.3em solid #e6e6e6;
-  border-bottom: 0.1em solid #f2f2f2;
-  border-left: 0.3em solid #e6e6e6;
-  border-radius: 0.25em;
-}
 .monitor .shadow {
   width: 12em;
   height: 8em;
@@ -454,6 +345,67 @@ body {
   -webkit-box-shadow: -22em 0 1.8em rgba(100, 90, 100, 0.2);
   -moz-box-shadow: -22em 0 1.8em rgba(100, 90, 100, 0.2);
   box-shadow: -22em 0 1.8em rgba(100, 90, 100, 0.2);
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+body {
+  background-color: #eee9e6;
+  font-size: 34px;
 }
 
 @-moz-keyframes back-and-forth {
