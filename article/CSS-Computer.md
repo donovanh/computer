@@ -28,6 +28,8 @@ There are many tutorials around that cover ways we can use CSS to create basic s
 
 In this project I will build a 3D model of the computer and display it in a three dimensional setting. Using CSS Keyframe animation we'll make it move on around to show off the 3D effect better.
 
+You can see the [finished example online](http://hop.ie/computer/), or read on to see the process of making it step by step.
+
 ## Setting the stage
 
 When creating 3D using HTML we need a scene within which to build it. Start with a container HTML element:
